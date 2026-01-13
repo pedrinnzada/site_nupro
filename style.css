@@ -47,8 +47,6 @@ nav a:hover {
   font-size: 14px;
 }
 
-
-
 .btn-header {
   background: linear-gradient(90deg, #8f00ff, #c14cff);
   border: none;
@@ -119,10 +117,18 @@ nav a:hover {
   height: 520px;
   margin: 40px auto;
   border-radius: 30px;
-  background: linear-gradient(180deg, #3a0066, #12001f);
+  background: #000;
   position: relative;
+  overflow: hidden; /* ISSO É O SEGREDO */
   box-shadow: 0 10px 200px rgba(180, 76, 255, 0.4);
 }
+
+.mockup video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche igual tela de app */
+}
+
 
 .play {
   width: 60px;
